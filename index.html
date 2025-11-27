@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDP3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <div class="crud-card">
+            <section class="crud">
+                <h1 class="crud-title">Usuarios</h1>
+
+                <form id="Registro" class="crud_formulario">
+                    <input type="text" placeholder="Nombre" id="nameInput" class="form_input">
+                    <input type="email" placeholder="Email" id="emailInput" class="form_input">
+                    <button type="submit" id="submitButton" class="button button-primary">Agregar</button>
+                </form>
+
+                <table class="crud_table">
+                    <thead>
+                        <tr>
+                            <th class="table_header">Nombre</th>
+                            <th class="table_header">Email</th>
+                            <th class="table_header">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tableBody" class="table_body"></tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
